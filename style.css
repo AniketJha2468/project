@@ -1,0 +1,503 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html, body{
+    height: 100vh;
+    width: 100%;
+}
+
+#main{
+    width: 100%;
+    position: relative;
+    min-height: 100%;
+}
+
+#main #nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+#main #nav h4{
+    font-size: 22px;
+    letter-spacing: -1px;
+}
+
+#main #rnav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#main #rnav a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+#main #rnav button{
+    padding: 8px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 100px;
+    font-weight: 500;
+}
+
+#main #text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    z-index: 2;
+}
+
+#main #text h1{
+    font-size: 50px;
+    letter-spacing: -2px;
+    font-weight: 600;
+}
+
+#main #text p{
+    font-weight: 500;
+    width: 30%;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+#main #btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+#main #btns button{
+    padding: 12px 26px;
+    border-radius: 100px;
+    font-weight: 500;
+}
+
+#main #btns button:nth-child(1){
+    background-color: black;
+    color: white;
+}
+
+#main #btns button:nth-child(2){
+    background-color: rgb(247, 247, 247);
+    color: black;
+    border: none;
+}
+
+#main img{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#master{
+    min-height: 100vh;
+    width: 100%;
+}
+
+#master #mnav{
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#master #mnav h4{
+    font-size: 22px;
+    letter-spacing: -1px;
+}
+
+#master #mrnav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#mrnav a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: -.5px;
+}
+
+#mstext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+#mstext h1{
+    font-size: 60px;
+    line-height: .9;
+    padding-top: 10px;
+    letter-spacing: -2px;
+}
+
+#mstext h1:nth-child(2){
+    padding-bottom: 25px;
+}
+
+#mstext #rectangle{
+    position: relative;
+    height: 300px;
+    width: 70%;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#rectangle #square:nth-child(1){
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    border-radius: 10px;
+    transform: rotate(-10deg);
+}
+
+#rectangle #square:nth-child(2){
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background-color: lightskyblue;
+    left: 15%;
+    border-radius: 10px;
+    transform: rotate(-6deg);
+    top: 5%;
+}
+
+#square #name1{
+    position: absolute;
+    top: -30%;
+    background-color: lightskyblue;
+    padding: 10px 15px;
+    border-radius: 100px;
+    color: white;
+    transform: translate(25%, 0);
+}
+
+#square #arrow1{
+    position: absolute;
+    border-top: 10px solid lightskyblue;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    top: -12%;
+    left: 35%;
+}
+
+#rectangle #square:nth-child(3){
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+    left: 30%;
+    border-radius: 10px;
+    transform: rotate(-2deg);
+    top: 7%;
+}
+
+#rectangle #square:nth-child(4){
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background-color: orange;
+    left: 45%;
+    border-radius: 10px;
+    transform: rotate(1deg);
+    top: 7%;
+}
+
+#rectangle #square:nth-child(5){
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background-color: orangered;
+    left: 60%;
+    border-radius: 10px;
+    transform: rotate(4deg);
+    top: 8%;
+}
+
+#rectangle #square:nth-child(6){
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background-color: rgb(68, 68, 219);
+    left: 70%;
+    border-radius: 10px;
+    transform: rotate(8deg);
+    top: 11%;
+}
+
+#rectangle #square:nth-child(7){
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background-color: rgb(66, 190, 66);
+    right: 0%;
+    border-radius: 10px;
+    transform: rotate(12deg);
+    top: 12%;  
+}
+
+#square #name2{
+    position: absolute;
+    top: -32%;
+    background-color: rgb(66, 190, 66);
+    padding: 10px 15px;
+    border-radius: 100px;
+    color: white;
+    transform: translate(75%, 0);
+}
+
+#square #arrow2{
+    position: absolute;
+    border-top: 10px solid rgb(66, 190, 66);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    top: -14%;
+    left: 50%;
+}
+
+#square #h3:nth-child(2){
+    position: absolute;
+    transform: translate(50%, 0);
+    font-weight: 500;
+    letter-spacing: -1px;
+    background-color: pink;
+    padding: 5px 10px;
+    border-radius: 100px;
+}
+
+#stext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+#stext h4{
+    font-size: 15px;
+    font-weight: 560;
+}
+
+#stext #btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-top: 30px;
+}
+
+#master #btns button:nth-child(1){
+    background-color: black;
+    color: white;
+    padding: 12px 26px;
+    border-radius: 100px;
+    border: none;
+}
+
+#master #btns button:nth-child(2){
+    background-color: rgb(253, 251, 251);
+    color: black;
+    padding: 12px 26px;
+    border-radius: 100px;
+    border: none;
+}
+
+#sg{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+#sg .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 0px;
+    line-height: 1.5;
+}
+
+#sg .text h3{
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+#sg .text h5{
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    opacity: 20%;
+}
+
+#sg #sgtext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sg #sgtext h1{
+    text-transform: uppercase;
+    font-size: 70px;
+    letter-spacing: -5px;
+}
+
+#sg #sgtext #lsgtext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sg #sgtext #lsgtext h1{
+    opacity: 20%;
+    line-height: 1;
+}
+
+#sgtext #sgrectangle{
+    display: flex;
+    position: relative;
+    height: 280px;
+    width: 40%;
+}
+
+#sgrectangle #card{
+    position: absolute;
+    height: 220px;
+    width: 220px;
+    border-radius: 20px;
+    background-color: rgb(143, 255, 143);
+    transform: translate(0, 10%) rotate(2deg);
+    box-shadow: 5px 5px 30px rgb(199, 199, 199);
+}
+
+#sgrectangle #card:nth-child(2){
+    position: absolute;
+    height: 220px;
+    width: 220px;
+    border-radius: 20px;
+    background-color: rgb(118, 212, 255);
+    transform: translate(60%, 10%) rotate(-5deg);
+    top: -5%;
+    z-index: 2;
+}
+
+#sgrectangle #card:nth-child(3){
+    position: absolute;
+    height: 220px;
+    width: 220px;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 94);
+    transform: translate(120%, 4%) rotate(7deg);
+    top: 5%;
+    z-index: 3;
+}
+
+#sgrectangle #card:nth-child(4){
+    position: absolute;
+    height: 220px;
+    width: 220px;
+    border-radius: 20px;
+    background-color: rgb(255, 193, 203);
+    transform: translate(180%, 10%) rotate(-4deg);
+    top: -5%;
+    z-index: 4;
+}
+
+#trusted{
+    min-height: 100vh;
+    width: 100%;
+    padding: 1px;
+}
+
+#trustedtext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+}
+
+#trustedtext h4{
+    opacity: .4;
+    padding-bottom: 2px;
+    letter-spacing: -.5px;
+}
+
+#trustedtext h1{
+    font-size: 50px;
+    letter-spacing: -2px;
+}
+
+#trustedtext #rectangle{
+    height: 400px;
+    width: 70%;
+    margin-top: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#trustedtext #rectangle img{
+    width: 55%;
+}
+
+#digital{
+    height: 100vh;
+    width: 100%;
+    padding: 1px;
+    position: relative;
+}
+
+#digital #digitaltext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 180px;
+}
+
+#digitaltext h1{
+    font-size: 40px;
+    font-weight: 540;
+    letter-spacing: -1.5px;
+}
+
+#digitaltext h5{
+    margin-top: 15px;
+    font-weight: 600;
+    opacity: .3;
+    letter-spacing: -.5px;
+}
+
+#digitaltext button{
+    margin-top: 15px;
+    color: white;
+    background-color: black;
+    padding: 8px 15px;
+    border-radius: 100px;
+    border: none;
+}
+
+#digitaltext img{
+    position: absolute;
+    width: 50%;
+    bottom: 0;
+}
